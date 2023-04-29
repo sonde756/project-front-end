@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+<input type="checkbox" id="close-menu" class="close-menu" aria-label="close-menu" role="button">
+<label for="close-menu" title="close menu" class="close-menu-label"></label>
 <aside class="menu white-bg">
   <div class="main-content menu-content">
     <h1><a href="#home">LOGO</a></h1>
     <nav>
-      <ul>
+      <ul onclick="getElementById('close-menu').checked = false;">
         <li><a href="#top3">Intro</a></li>
         <li><a href="#grid-one">Grid</a></li>
         <li><a href="#gallery">Gallery</a></li>
@@ -235,6 +238,8 @@
 <footer class="footer white-bg" id="footer">
   <p><a href="#" rel="nofollow" target="_blank">Feito com ❤️ por Edson</a></p>
 </footer>
+
+<a class="back-to-top" href="#home">🔝</a>
 
 </body>
 </html>
